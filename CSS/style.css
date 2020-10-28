@@ -110,7 +110,7 @@ body {
 .header .logo {
     margin-right: 93px;
 }
- .header {
+.header {
     padding-top: 24px;
     padding-bottom: 24px;
 
@@ -346,26 +346,24 @@ body {
     margin-bottom: 20px;
 }
 .footer-address{ 
-    color: var(--primary-white-color);
+    display: flex;
+    
+    flex-direction: column;
     font-style: normal;
 }
-.contact .link-contact {
-    color: var(--contact-text-color);
+.footer-address .link {
+    color: var(--primary-white-color);
     text-decoration: none;
-} 
-.contact{
-    margin-bottom: 0px;
-}
-.link-contact {
-    display: inline-block;
-    margin-top: 9px;
     margin-bottom: 9px;
-} 
+    width: max-content;
+}
+.footer-address .link-contact {
+    color: var(--contact-text-color);
+}
 .link-contact:last-child {
-    margin-top: 0px;
     margin-bottom: 0px;
 }
-.contact .link-contact:hover,
-.contact .link-contact:focus {
+.footer-address .link-contact:hover,
+.footer-address .link-contact:focus {
     color: var(--accent-color);
 }
