@@ -120,8 +120,25 @@ body {
 .contact-list {
     display: inline-flex;
 }
-.contact-list .link-email{
+.item-email{
     margin-right: 50px;
+}
+.link-email::before {
+    display: inline-block;
+    content: "";
+    height: 12px;
+    width: 16px;
+    margin-right: 10px;
+    background-image: url(../images/envelope.svg);
+}
+.link-telephon::before{
+    display: inline-block;
+    content: "";
+    height: 16px;
+    width: 10px;
+    margin-right: 10px;
+    background-position: bottom;
+    background-image: url(../images/Vector.svg);
 }
 .header-container {
     display: flex;
@@ -351,17 +368,20 @@ body {
 }
 /*section5-clients*/
 .clients-item {
-    margin-left: 30px;
-    /* margin-top: 30px; */
-    flex-basis: calc(100% / 6 - 30px);
-
-    /* padding: 20px 63px; */
-    content: auto;
+    height: 90px;
+    width: 170px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 6 - 30px);
+    /* margin-top: 30px; */
 }
-
-   /*section-portfolio*/
+.clients-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+}
+/*section-portfolio*/
 .list-button {
     display: flex;
     justify-content: center;
