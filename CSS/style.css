@@ -402,6 +402,10 @@ body {
 .list-portfolio {
   margin-top: -30px;
 }
+.list-portfolio .link {
+  display: block;
+  text-decoration: none;
+}
 .item-portfolio {
   margin-left: 30px;
   margin-top: 30px;
@@ -409,14 +413,13 @@ body {
 
   background-color: var(--primary-white-color);
 }
-.item-portfolio:hover,
-.item-portfolio:focus {
+
+.item-portfolio .link:hover,
+.item-portfolio .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.list-portfolio .link {
-  text-decoration: none;
-}
+
 .title-portfolio {
   color: var(--title-text-color);
   font-weight: 700;
